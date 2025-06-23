@@ -1958,7 +1958,7 @@
                 const categoryCommandsDiv = document.createElement('div');
                 categoryCommandsDiv.id = categoryId;
                 // Adiciona a classe 'collapsed' aqui para que comecem recolhidas
-                categoryCommandsDiv.className = 'category-commands space-y-1 collapsed';
+                categoryCommandsDiv.className = 'category-commands collapsed';
 
                 // Sort commands within each category and append them
                 categories[categoryName].sort((a, b) => a.name.localeCompare(b.name)).forEach(cmd => {
