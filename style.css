@@ -1,122 +1,169 @@
 body {
-            font-family: 'Inter', sans-serif;
-            background-color: #FCF9F6; /* Cor de fundo principal, tom claro Itaú */
-        }
-        .container {
-            max-width: 1200px;
-        }
-        /* Classe para o gradiente da sidebar, usando as cores do Itaú */
-        .itaubg-sidebar-gradient {
-            background-image: linear-gradient(to bottom right, #FF6200, #E05C1A); /* Laranja Itaú para um tom mais escuro */
-        }
+    font-family: 'Inter', sans-serif;
+    background-color: #FCF9F6; /* Cor de fundo principal, tom claro Itaú */
+}
+.container {
+    max-width: 1200px;
+}
+/* Classe para o gradiente da sidebar, usando as cores do Itaú */
+.itaubg-sidebar-gradient {
+    background-image: linear-gradient(to bottom right, #FF6200, #E05C1A); /* Laranja Itaú para um tom mais escuro */
+}
 
-        .command-button, .popular-command-button {
-            transition: all 0.2s ease-in-out;
-        }
-        .command-button:hover, .popular-command-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        .code-block {
-            background-color: #e2e8f0; /* bg-gray-200 */
-            border-left: 4px solid #FC6D20; /* Laranja Itaú para a borda */
-            padding: 1rem;
-            border-radius: 0.5rem;
-            margin-top: 0.75rem;
-            overflow-x: auto; /* Allow horizontal scrolling for wide code */
-        }
-        .code-block pre {
-            margin: 0;
-            white-space: pre-wrap; /* Ensure pre-wrap for better readability */
-            word-break: break-word; /* Break long words */
-        }
-        .example-section {
-            margin-bottom: 1.5rem;
-            padding-bottom: 1.5rem;
-            border-bottom: 1px solid #cbd5e0; /* border-gray-300 */
-        }
-        .example-section:last-child {
-            border-bottom: none;
-        }
-        .category-heading {
-            font-size: 1.25rem; /* text-xl */
-            font-weight: 600; /* font-semibold */
-            margin-top: 1.5rem;
-            margin-bottom: 0.5rem; /* Adjusted for tighter grouping */
-            color: #FFFFFF; /* Texto branco */
-            background-color: #FF7A2B; /* Laranja Itaú mais claro que o gradiente da barra lateral */
-            border: 1px solid rgba(255, 255, 255, 0.2); /* Borda mais sutil */
-            padding: 0.75rem 0.5rem; /* More vertical padding */
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            cursor: pointer; /* Indicate it's clickable */
-            transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-            border-radius: 0.5rem;
-        }
-        .category-heading:hover {
-            background-color: #FF6200; /* Laranja Itaú para o hover (cor inicial do gradiente da sidebar) */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle lift on hover */
-        }
-        .category-toggle-icon {
-            transition: transform 0.2s ease-in-out;
-        }
-        .category-toggle-icon.rotated {
-            transform: rotate(90deg); /* Rotate for expanded state */
-        }
-        .category-commands {
-            overflow: hidden; /* Hide overflow when collapsed */
-            transition: max-height 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out, margin-top 0.3s ease-in-out, margin-bottom 0.3s ease-in-out; /* Smooth collapse/expand */
-        }
-        .category-commands.collapsed {
-            max-height: 0; /* Collapse state */
-            padding-top: 0;
-            padding-bottom: 0;
-            margin-top: 0;
-            margin-bottom: 0;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 1rem;
-            margin-bottom: 1.5rem;
-            background-color: #f9fafb; /* bg-gray-50 */
-            border-radius: 0.5rem;
-            overflow: hidden;
-        }
-        th, td {
-            border: 1px solid #cbd5e0; /* border-gray-300 */
-            padding: 0.75rem;
-            text-align: left;
-        }
-        /* Cor de fundo do cabeçalho da tabela (th) */
-        th {
-            background-color: #003060; /* Azul escuro Itaú */
-            font-weight: 600;
-            color: #FFFFFF; /* Texto branco */
-        }
-        tbody tr:nth-child(even) {
-            background-color: #edf2f7; /* bg-gray-100 */
-        }
-        .table-section h5 {
-            color: #FC6D20; /* Laranja Itaú para sub-títulos de tabela */
-            margin-bottom: 0.75rem;
-        }
-        /* Ajuste de cores para os elementos de texto e botões */
-        .text-blue-700 {
-            color: #FC6D20; /* Laranja Itaú para títulos principais */
-        }
-        .popular-command-button {
-            background-color: #FF8C42; /* Laranja Itaú mais claro */
-            color: white;
-        }
-        .popular-command-button:hover {
-            background-color: #FF7A2B; /* Laranja Itaú ligeiramente mais escuro no hover */
-        }
-        .popular-command-button:focus {
-            box-shadow: 0 0 0 2px #FF9933; /* Laranja Itaú para o foco */
-        }
-        .highlight {
-            font-weight: bold;
-            color: #003060; /* Azul escuro Itaú para destaque de pesquisa */
-        }
+.command-button, .popular-command-button {
+    transition: all 0.2s ease-in-out;
+}
+.command-button:hover, .popular-command-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.code-block {
+    background-color: #e2e8f0; /* bg-gray-200 */
+    border-left: 4px solid #FC6D20; /* Laranja Itaú para a borda */
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 0.75rem;
+    overflow-x: auto; /* Allow horizontal scrolling for wide code */
+}
+.code-block pre {
+    margin: 0;
+    white-space: pre-wrap; /* Ensure pre-wrap for better readability */
+    word-break: break-word; /* Break long words */
+}
+.example-section {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #cbd5e0; /* border-gray-300 */
+}
+.example-section:last-child {
+    border-bottom: none;
+}
+.category-heading {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: 600; /* font-semibold */
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem; /* Adjusted for tighter grouping */
+    color: #FFFFFF; /* Texto branco */
+    background-color: #FF7A2B; /* Laranja Itaú mais claro que o gradiente da barra lateral */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borda mais sutil */
+    padding: 0.75rem 0.5rem; /* More vertical padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer; /* Indicate it's clickable */
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border-radius: 0.5rem;
+}
+.category-heading:hover {
+    background-color: #FF6200; /* Laranja Itaú para o hover (cor inicial do gradiente da sidebar) */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle lift on hover */
+}
+.category-toggle-icon {
+    transition: transform 0.2s ease-in-out;
+}
+.category-toggle-icon.rotated {
+    transform: rotate(90deg); /* Rotate for expanded state */
+}
+.category-commands {
+    overflow: hidden; /* Hide overflow when collapsed */
+    transition: max-height 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out, margin-top 0.3s ease-in-out, margin-bottom 0.3s ease-in-out; /* Smooth collapse/expand */
+}
+.category-commands.collapsed {
+    max-height: 0; /* Collapse state */
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: #f9fafb; /* bg-gray-50 */
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+th, td {
+    border: 1px solid #cbd5e0; /* border-gray-300 */
+    padding: 0.75rem;
+    text-align: left;
+}
+/* Cor de fundo do cabeçalho da tabela (th) */
+th {
+    background-color: #003060; /* Azul escuro Itaú */
+    font-weight: 600;
+    color: #FFFFFF; /* Texto branco */
+}
+tbody tr:nth-child(even) {
+    background-color: #edf2f7; /* bg-gray-100 */
+}
+.table-section h5 {
+    color: #FC6D20; /* Laranja Itaú para sub-títulos de tabela */
+    margin-bottom: 0.75rem;
+}
+/* Ajuste de cores para os elementos de texto e botões */
+.text-blue-700 {
+    color: #FC6D20; /* Laranja Itaú para títulos principais */
+}
+.popular-command-button {
+    background-color: #FF8C42; /* Laranja Itaú mais claro */
+    color: white;
+}
+.popular-command-button:hover {
+    background-color: #FF7A2B; /* Laranja Itaú ligeiramente mais escuro no hover */
+}
+.popular-command-button:focus {
+    box-shadow: 0 0 0 2px #FF9933; /* Laranja Itaú para o foco */
+}
+.highlight {
+    font-weight: bold;
+    color: #003060; /* Azul escuro Itaú para destaque de pesquisa */
+}
+
+/* --- Estilos para a página de atividades --- */
+.tab-button {
+    background-color: #F0F0F0; /* Fundo mais claro para botões inativos */
+    color: #333; /* Texto mais escuro para contraste */
+    padding: 0.75rem 1.5rem;
+    border: 2px solid transparent; /* Borda transparente inicial */
+    border-radius: 0.5rem;
+    font-weight: 500; /* Peso de fonte padrão */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Transição para todas as propriedades */
+    margin: 0 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.tab-button:hover {
+    background-color: #E0E0E0; /* Leve escurecimento no hover */
+    transform: translateY(-2px) scale(1.02); /* Leve subida e escala */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.tab-button.active {
+    background-color: #003060; /* Azul escuro Itaú para a aba ativa */
+    color: white;
+    font-weight: 700; /* Negrito para a aba ativa */
+    border-bottom: 4px solid #FC6D20; /* Borda inferior laranja destacada */
+    transform: translateY(0) scale(1.0); /* Reseta a transformação de hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    padding-bottom: calc(0.75rem - 2px); /* Ajusta padding para compensar a borda */
+}
+
+.activity-card {
+    border: 1px solid #cbd5e0; /* Cor da borda */
+}
+
+.sql-input {
+    font-family: 'Fira Code', 'Cascadia Code', monospace; /* Fonte monoespaçada para código */
+    min-height: 120px; /* Altura mínima para o campo de texto */
+}
+
+.feedback-area.text-green-600 {
+    color: #28a745; /* Um verde vibrante para sucesso */
+}
+
+.feedback-area.text-red-600 {
+    color: #dc3545; /* Um vermelho vibrante para erro */
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,23 +9,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body class="p-4 sm:p-6 md:p-8">
     <div class="container mx-auto bg-white rounded-xl shadow-lg p-6 md:p-10">
         <header class="text-center mb-8">
             <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-2">Guia Simplificado de Comandos SQL</h1>
             <p class="text-lg text-gray-600">Encontre e aprenda comandos SQL de forma rápida e eficiente.</p>
             <p class="text-lg text-gray-600">De estagiario para estagiario.</p>
+            <p class="text-lg text-gray-600 mt-4"><a href="activities.html" class="text-[#003060] hover:underline">Ir
+                    para Atividades SQL</a></p>
         </header>
 
         <!-- Barra de Pesquisa -->
         <div class="mb-8 relative">
             <input type="text" id="searchInput" placeholder="Pesquisar comandos SQL (ex: SELECT, INSERT, JOIN)"
-                   class="w-full p-4 pl-12 pr-4 text-gray-700 bg-gray-100 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF9933] focus:border-transparent shadow-sm"
-                   oninput="filterCommands()">
+                class="w-full p-4 pl-12 pr-4 text-gray-700 bg-gray-100 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF9933] focus:border-transparent shadow-sm"
+                oninput="filterCommands()">
             <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
             </div>
-            <div id="searchResults" class="absolute z-10 w-full bg-white border border-gray-300 rounded-xl shadow-lg mt-2 hidden max-h-60 overflow-y-auto">
+            <div id="searchResults"
+                class="absolute z-10 w-full bg-white border border-gray-300 rounded-xl shadow-lg mt-2 hidden max-h-60 overflow-y-auto">
                 <!-- Resultados da pesquisa serão inseridos aqui -->
             </div>
         </div>
@@ -40,9 +49,11 @@
 
             <!-- Detalhes do Comando -->
             <div class="md:col-span-2 bg-white p-6 rounded-xl shadow-md">
-                <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-200 pb-3">Detalhes do Comando</h2>
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-200 pb-3">Detalhes do Comando
+                </h2>
                 <div id="commandDetails" class="text-gray-700">
-                    <p class="text-gray-500">Selecione um comando da lista de "Comandos SQL por Categoria" ou pesquise para ver seus detalhes e exemplos.</p>
+                    <p class="text-gray-500">Selecione um comando da lista de "Comandos SQL por Categoria" ou pesquise
+                        para ver seus detalhes e exemplos.</p>
                 </div>
             </div>
         </div>
@@ -50,4 +61,5 @@
 
     <script src="./script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades de Comandos SQL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="p-4 sm:p-6 md:p-8">
+    <div class="container mx-auto bg-white rounded-xl shadow-lg p-6 md:p-10">
+        <header class="text-center mb-8">
+            <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-2">Atividades de Comandos SQL</h1>
+            <p class="text-lg text-gray-600">Teste seus conhecimentos com atividades práticas de SQL.</p>
+            <p class="text-lg text-gray-600"><a href="index.html" class="text-[#FC6D20] hover:underline">Voltar ao Guia de Comandos</a></p>
+        </header>
+
+        <div class="flex justify-center mb-8">
+            <button class="tab-button active" data-difficulty="easy">Fácil</button>
+            <button class="tab-button" data-difficulty="intermediate">Intermediário</button>
+            <button class="tab-button" data-difficulty="advanced">Avançado</button>
+        </div>
+
+        <div id="activitiesContent" class="bg-gray-50 p-6 rounded-xl shadow-md">
+            <p class="text-center text-gray-500">Selecione uma dificuldade para começar as atividades.</p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
